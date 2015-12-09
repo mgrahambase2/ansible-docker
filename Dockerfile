@@ -8,8 +8,6 @@ RUN  apt-get update \
      && apt-get install -y software-properties-common \
     && apt-add-repository ppa:ansible/ansible \
     && apt-get update \
-    && apt-get remove -y 'python3*' 'libpython*' \
-    && apt-get install -y python2.7 \
     && apt-get install ansible
 RUN mkdir /etc/ansible \
     && touch /etc/ansible/hosts \
